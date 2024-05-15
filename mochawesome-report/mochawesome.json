@@ -1,0 +1,312 @@
+{
+  "stats": {
+    "suites": 5,
+    "tests": 8,
+    "passes": 8,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-05-15T02:35:30.101Z",
+    "end": "2024-05-15T02:35:30.122Z",
+    "duration": 21,
+    "testsRegistered": 8,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f8c9714c-d064-4d85-a76a-3952e0c4568e",
+      "title": "",
+      "fullFile": "C:\\Users\\diego\\OneDrive\\Desktop\\Epam_Testing\\num_validator\\test\\NumbersValidator.test.js",
+      "file": "\\test\\NumbersValidator.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8e540fdd-8369-4f84-8558-0e79cce4f6b0",
+          "title": "NumbersValidator",
+          "fullFile": "C:\\Users\\diego\\OneDrive\\Desktop\\Epam_Testing\\num_validator\\test\\NumbersValidator.test.js",
+          "file": "\\test\\NumbersValidator.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "327ad09f-36a9-4030-ab23-647468208aae",
+              "title": "#isNumberEven()",
+              "fullFile": "C:\\Users\\diego\\OneDrive\\Desktop\\Epam_Testing\\num_validator\\test\\NumbersValidator.test.js",
+              "file": "\\test\\NumbersValidator.test.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should return true for even numbers",
+                  "fullTitle": "NumbersValidator #isNumberEven() should return true for even numbers",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "assert.strictEqual(validator.isNumberEven(4), true);",
+                  "err": {},
+                  "uuid": "25b4f82e-2713-4b90-afdf-3ad508577fc7",
+                  "parentUUID": "327ad09f-36a9-4030-ab23-647468208aae",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should throw error for non-number inputs",
+                  "fullTitle": "NumbersValidator #isNumberEven() should throw error for non-number inputs",
+                  "timedOut": false,
+                  "duration": 1,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "assert.throws(() => validator.isNumberEven('4'), Error);",
+                  "err": {},
+                  "uuid": "a9dbeb5c-e3ce-4712-94e3-05420e66df92",
+                  "parentUUID": "327ad09f-36a9-4030-ab23-647468208aae",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "25b4f82e-2713-4b90-afdf-3ad508577fc7",
+                "a9dbeb5c-e3ce-4712-94e3-05420e66df92"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "88b3fe64-34a7-425a-b1f3-034118d111cf",
+              "title": "#getEvenNumbersFromArray()",
+              "fullFile": "C:\\Users\\diego\\OneDrive\\Desktop\\Epam_Testing\\num_validator\\test\\NumbersValidator.test.js",
+              "file": "\\test\\NumbersValidator.test.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should return only even numbers from array",
+                  "fullTitle": "NumbersValidator #getEvenNumbersFromArray() should return only even numbers from array",
+                  "timedOut": false,
+                  "duration": 2,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "assert.deepStrictEqual(validator.getEvenNumbersFromArray([1, 2, 3, 4, 5, 6]), [2, 4, 6]);",
+                  "err": {},
+                  "uuid": "229a047c-c533-45c9-9e31-01bc4205e148",
+                  "parentUUID": "88b3fe64-34a7-425a-b1f3-034118d111cf",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should throw error for non-array inputs",
+                  "fullTitle": "NumbersValidator #getEvenNumbersFromArray() should throw error for non-array inputs",
+                  "timedOut": false,
+                  "duration": 1,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "assert.throws(() => validator.getEvenNumbersFromArray(\"not an array\"), Error);",
+                  "err": {},
+                  "uuid": "030743d5-cdb3-45c2-a478-80a620266511",
+                  "parentUUID": "88b3fe64-34a7-425a-b1f3-034118d111cf",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "229a047c-c533-45c9-9e31-01bc4205e148",
+                "030743d5-cdb3-45c2-a478-80a620266511"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 3,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "61097b80-1467-40ab-b63a-eae056182ee7",
+              "title": "#isAllNumbers()",
+              "fullFile": "C:\\Users\\diego\\OneDrive\\Desktop\\Epam_Testing\\num_validator\\test\\NumbersValidator.test.js",
+              "file": "\\test\\NumbersValidator.test.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should return true if all elements are numbers",
+                  "fullTitle": "NumbersValidator #isAllNumbers() should return true if all elements are numbers",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "assert.strictEqual(validator.isAllNumbers([1, 2, 3]), true);",
+                  "err": {},
+                  "uuid": "5173fd1b-a2ef-4e20-976c-23ff6ee0d612",
+                  "parentUUID": "61097b80-1467-40ab-b63a-eae056182ee7",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should return false if any element is not a number",
+                  "fullTitle": "NumbersValidator #isAllNumbers() should return false if any element is not a number",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "assert.strictEqual(validator.isAllNumbers([1, '2', 3]), false);",
+                  "err": {},
+                  "uuid": "0e62ecec-2ea5-4161-b48d-f8a6ec5c92e2",
+                  "parentUUID": "61097b80-1467-40ab-b63a-eae056182ee7",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "5173fd1b-a2ef-4e20-976c-23ff6ee0d612",
+                "0e62ecec-2ea5-4161-b48d-f8a6ec5c92e2"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "cead7fd0-036e-4abc-ac1b-07c357a705f2",
+              "title": "#isInteger()",
+              "fullFile": "C:\\Users\\diego\\OneDrive\\Desktop\\Epam_Testing\\num_validator\\test\\NumbersValidator.test.js",
+              "file": "\\test\\NumbersValidator.test.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should return true for integers",
+                  "fullTitle": "NumbersValidator #isInteger() should return true for integers",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "assert.strictEqual(validator.isInteger(4), true);",
+                  "err": {},
+                  "uuid": "cfbf9c07-00c8-404f-b97c-cf417c39a6db",
+                  "parentUUID": "cead7fd0-036e-4abc-ac1b-07c357a705f2",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should return false for non-integers",
+                  "fullTitle": "NumbersValidator #isInteger() should return false for non-integers",
+                  "timedOut": false,
+                  "duration": 1,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "assert.strictEqual(validator.isInteger(4.5), false);",
+                  "err": {},
+                  "uuid": "04f4b79c-fcfe-4a69-8d8f-8354bb3fe620",
+                  "parentUUID": "cead7fd0-036e-4abc-ac1b-07c357a705f2",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "cfbf9c07-00c8-404f-b97c-cf417c39a6db",
+                "04f4b79c-fcfe-4a69-8d8f-8354bb3fe620"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.4.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
